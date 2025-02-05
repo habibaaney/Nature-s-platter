@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI + TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/08cd35a9ff.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nature-primary': 'rgb(23, 152, 0)',
+                'nature-primary-f': 'rgb(255, 255, 255)',
+                'nature-primary-t': 'rgb(239, 235, 227)',
+                
+              }
+            }
+          }
+        }
+      </script>
+    
+</head>
+
+<body>
+   <!-- Header Section -->
+     <header class="mx-auto bg-gradient-to-b from-nature-primary-f to-nature-primary-t">
+        <!-- Nav bar -->
+            <div class="navbar md:px-28">
+                <!--  -->
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold">
+                          <li><a>Product</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Contact us</a></li>
+                        </ul>
+                      </div>
+                      <a class="text-xl"><img src="./c2-assets/logo-header.png" alt=""></a>
+                    </div>
+                
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                  
+                </div>
+                <div class="hidden navbar-end md:flex gap-4">
+                  <a><i class="fa-solid fa-cart-shopping bg-none text-3xl"></i></a>
+                  <a><i class="fa-solid fa-magnifying-glass text-3xl"></i></a>
+                  <a class="btn w-28 h-12 bg-white text-black border border-nature-primary rounded-xl">Login</a>
+                  <a class="btn w-28 h-12 bg-nature-primary text-white border border-nature-primary rounded-xl">Register</a>
+                </div>
+              </div>
+        <!-- Hero section -->
+        <div class="hero min-h-screen md:mt-24">
+            <div class="hero-content text-center">
+              <div class="max-w-3xl">
+                <h1 class="text-5xl font-semibold text-center">Freshness <span class="text-nature-primary">You Can Count</span> On, Prices You’ll Love!</h1>
+                <p class="py-6 text-lg">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+                <img src="./c2-assets/hero-vegetables.png" alt="">
+              </div>
+            </div>
+          </div>
+     </header>
+
+     <!-- Main section -->
+      <main>
+        <!-- Services section -->
+         <section class="my-32 mx-8 md:px-28 ">
+            <h1 class="text-nature-primary text-4xl justify-start font-semibold mb-12">Services</h1>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- card 1 -->
+                <div class="card bg-nature-primary-t shadow-xl items-center py-10">
+                    <div class="avatar">
+                        <div class="w-36  rounded-full bg-white">
+                          <img src="./c2-assets/service.png" />
+                        </div>
+                      </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">24/7 Services </h2>
+                      <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                  </div>
+                <!-- card 2 -->
+                <div class="card bg-nature-primary-t  shadow-xl items-center py-10">
+                    <div class="avatar">
+                        <div class="w-36 rounded-full bg-white">
+                          <img class="" src="./c2-assets/delivery.png" />
+                        </div>
+                      </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Fast Delivery </h2>
+                      <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                  </div>
+                <!-- card 3 -->
+                <div class="card bg-nature-primary-t shadow-xl items-center py-10">
+                    <div class="avatar">
+                        <div class="w-36  rounded-full bg-white">
+                          <img src="./c2-assets/healthy.png" />
+                        </div>
+                      </div>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Healthy Products </h2>
+                      <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                  </div>
+            </div>
+         </section>
+         <!-- Popular Products -->
+       <section class="bg-base-200 my-32 py-5 mx-auto w-screen">
+        <h3 class="text-5xl text-nature-primary font-bold text-left">Popular products</h3>
+        <div class="hero bg-base-200 w-auto">
+          <div class="hero-content flex-col lg:flex-row">
+            <!-- Image section -->
+            <div class="card bg-gradient-to-b from-nature-primary to-nature-primary-t h-auto shadow-xl rounded-lg">
+              <div class="card-body">
+                <h2 class="card-title text-white text-2xl text-right">30% off</h2>
+                <p class="text-xl text-left">Discover a world of treats, toys, and essentials handpicked for </p>
+                <a class="btn w-28 h-12 bg-white text-black border border-nature-primary rounded-xl text-left">Buy Now</a>
+              </div>
+              <figure>
+                <img class="block ms-auto"
+                  src="/c2-assets/vegetable-offer.png"
+                  alt="" />
+              </figure>
+            </div>
+           <!-- Product cards -->
+            <div class="grid grid-cols-2 col-span-6 md:grid-cols-3 col-span-12 gap-3 sm:gap-12">
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl w-[250px] h-[125px]">
+                <figure>
+                  <img
+                    src="./c2-assets/onion.png" class="bg-slate-300 ml-2 rounded-lg"
+                    alt="" />
+                </figure>
+                <div class="card-body">
+                  <div class="flex items-center text-yellow-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="ml-1 text-black font-semibold">4.5</span>
+                  </div>
+                  <h2 class="card-title font-medium">Onion 1 KG</h2>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+       </section>
+  
+       <!-- Arrival and offer section -->
+        
+      </main>
+
+     <!--Footer section  -->
+     <footer></footer>
+</body>
+</html>
